@@ -27,3 +27,11 @@ class Bit(IBit):
         carry = self & other
         rem = self ^ other
         return (rem, carry)
+
+    @staticmethod
+    def full_add(b1, b2, b3):
+        rem, carry1 = b1 + b2
+        sum, carry2 = rem + b3
+
+        two_carry = carry2 | carry1
+        return (sum, two_carry)

@@ -4,8 +4,8 @@ from core_helper import Bus
 from core_helper import connect_light
 
 def main():
-    x = TwoBytes(Bit.init_with_value(False), Bit.init_with_value(True))
-    y = TwoBytes(Bit.init_with_value(True), Bit.init_with_value(True))
+    x = TwoBytes(Bit.init_with_value(False), Bit.init_with_value(False))
+    y = TwoBytes(Bit.init_with_value(False), Bit.init_with_value(False))
 
     res, car = x + y
 
